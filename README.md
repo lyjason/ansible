@@ -8,14 +8,18 @@ use ansible playbook to deployment zabbix
 ----
 **description  for tags:**
   
-  name: rpm
+- name: rpm
+  
   dcp: installation zabbix rpm 
   
-  name: cache
+- name: cache
+  
   dcp: yum makecache
   
-  name: agent/get/sender
+- name: agent/get/sender
+  
   dcp: installation zabbix component
   
-  name: file
+- name: file
+  
   dcp: change zabbix_agentd.conf
