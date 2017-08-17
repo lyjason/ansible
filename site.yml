@@ -1,9 +1,9 @@
 ---
 - name: deployment
-  hosts: hosts
+  hosts: test
   remote_user: root
 
-  role:
+  roles:
     - common
     - packages
 
