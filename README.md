@@ -7,6 +7,7 @@ use ansible playbook to deployment zabbix
 
 ----
 **description  for tags:**
+  
   name: rpm
   dcp: installation zabbix rpm 
   
