@@ -5,8 +5,8 @@ use ansible playbook to deployment zabbix
 #2017年8月17日
 更新了role方法的结构，pb.yml是老版本
 
-
-description  for tags:
+----
+**description  for tags:**
   name: rpm
   dcp: installation zabbix rpm 
   
