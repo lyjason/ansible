@@ -1,0 +1,9 @@
+---
+- name: deployment
+  hosts: hosts
+  remote_user: root
+
+  role:
+    - common
+    - packages
+
