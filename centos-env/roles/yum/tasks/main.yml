@@ -1,0 +1,10 @@
+---
+- name: backup old repo
+  shell: mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+  
+- name: set new reop(aliyun)
+  shell: wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+
+- name: makecache
+  yum: name=* update_cache=yes
+  

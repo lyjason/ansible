@@ -1,0 +1,8 @@
+---
+- name: deployment system env
+  hosts: test
+  remote_user: root
+  ssh_password: 123
+  
+  roles:
+    - yum
