@@ -1,4 +1,4 @@
 ## this repository contains some ansible playbooks. ##
 
-## zabbix ##
+## dic: zabbix ##
 	use ansible playbooks to deployment zabbix-agent
