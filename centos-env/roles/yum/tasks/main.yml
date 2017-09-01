@@ -8,3 +8,5 @@
 - name: makecache
   yum: name=* update_cache=yes
   
+- name: update
+  yum: name=* state=latest
