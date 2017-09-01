@@ -2,7 +2,6 @@
 - name: deployment
   hosts: test
   remote_user: root
-  ignore_errors: True
 
   roles:
     - common
