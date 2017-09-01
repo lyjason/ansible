@@ -1,0 +1,8 @@
+---
+- name: disable selinux
+  template: src=config.j2 dest=/etc/selinux/conifg
+  tags: firewall
+
+- name: disable firewall
+  service: name=firewalld state=stopped
+  tags: firewall
