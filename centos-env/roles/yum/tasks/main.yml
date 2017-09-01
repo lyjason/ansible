@@ -3,7 +3,7 @@
   shell: mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
   
 - name: set new reop(aliyun)
-  get_url: url:http://mirrors.aliyun.com/repo/Centos-7.repo dest:/etc/yum.repos.d/CentOS-Base.repo
+  get_url: url=http://mirrors.aliyun.com/repo/Centos-7.repo dest=/etc/yum.repos.d/CentOS-Base.repo
 
 - name: makecache
   yum: name=* update_cache=yes
