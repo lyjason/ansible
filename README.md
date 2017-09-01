@@ -1,4 +1,2 @@
-## this repository contains some ansible playbooks. ##
+## This is a branch used to develop the environment  ##
 
-## dic: zabbix [in devlopment] ##
-	use ansible playbooks to deployment zabbix-agent
