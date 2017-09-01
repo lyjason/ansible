@@ -1,27 +1,22 @@
 ---
 - name: install rpm
   yum: name=https://repo.zabbix.com/zabbix/3.2/rhel/7/x86_64/zabbix-release-3.2-1.el7.noarch.rpm state=present
-  register: rpm
   tags: rpm
 
 - name: makecache
   yum: name=* update_cache=yes
-  register: cache
   tags: cache
 
 - name: install agent
   yum: name=zabbix-agent state=latest
-  register: agent
   tags: agent
 
 - name: install agent-get
   yum: name=zabbix-get state=latest
-  register: aget
   tags: get
   
 - name: install agent-sender
   yum: name=zabbix-sender state=latest
-  register: asender  
   tags: sender
 
 - name: change config
