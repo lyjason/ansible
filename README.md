@@ -1,4 +1,4 @@
-## This is a branch used to develop the environment  ##
+## ansible playbook stabilized ##
 
 ## dic: zabbix [stable] ##
 	use ansible playbooks to deployment zabbix-agent
