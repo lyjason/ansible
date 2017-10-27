@@ -1,2 +1,4 @@
 [test]
-172.16.102.99 
+172.16.110.23
+[test:vars] 
+#ansible_ssh_port=22220
