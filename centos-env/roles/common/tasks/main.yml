@@ -1,0 +1,35 @@
+---
+- name: stop firewalld
+  service: name=firewalld state=stopped enabled=no
+
+- selinux: state=disabled
+
+- name: upgrade packages
+  yum: name='*' state=latest
+
+- name: insatll packages
+  yum: name={{ item }} state=installed
+  with_items: 
+    - httpd
+    - mariadb-server
+    - mariadb
+    - php-gd
+    - php-ldap
+    - php-odbc 
+    - php-pear
+    - php-xml
+    - php-xmlrpc 
+    - php-mbstring 
+    - php-snmp 
+    - php-soap
+    - curl 
+    - curl-devel
+    - php
+    - MySQL-python
+    - php
+    - php-mysql
+- name: start servise
+  service: name={{item}} state=restarted enabled=yes
+  with_items:
+    - httpd
+    - mariadb

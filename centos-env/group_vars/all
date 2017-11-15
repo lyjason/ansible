@@ -1,0 +1,4 @@
+mysqlservice: mysqld
+mysql_port: 3306
+dbuser: root
+upassword: mysql
