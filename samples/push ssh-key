@@ -3,7 +3,7 @@
   
   tasks:
   
-  - name: install ssh key
+  - name: push ssh key
     authourized_key: user=root  #使用authourized_key模块 详询：http://docs.ansible.com/ansible/latest/authorized_key_module.html
                      key="{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"    #使用本地key格式就是这样的
                      state=present
